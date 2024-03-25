@@ -2,13 +2,13 @@ import LinearSearch from "./array/LinearSearch";
 import BinarySearch, { RecursiveBinarySearch } from "./array/BinarySearch";
 import BubbleSort from "./sort/BubbleSort";
 import Queue from "./sort/Queue";
+import Stack from "./sort/Stack";
 
-// console.log(LinearSearch([1, 4, 5, 6, 7], 4))
-// console.log(BinarySearch([1, 4, 5, 6, 7], 11))
-// console.log(RecursiveBinarySearch([1, 4, 5, 6, 7], 5, 0, 4))
-// BubbleSort([3, 4, 45, 6, 2, 1, 234, 5, 2, 1, 2])
-
-let q = new Queue
-q.enqueue(2)
-q.enqueue(4)
-console.log(q.peek())
+let s = new Stack
+s.push(5)
+s.push(7)
+s.push(9)
+s.push(1)
+s.push(8)
+console.log(s)
+console.log(s.top?.prev?.prev?.prev)
